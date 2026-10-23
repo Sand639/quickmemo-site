@@ -1,0 +1,83 @@
+:root {
+  --text: #1f1b16;
+  --sub: #6b645c;
+  --accent: #c8603f;
+  --bg: #ffffff;
+  --line: #e4ded6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f5f1ec;
+    --sub: #aba399;
+    --accent: #f08a6e;
+    --bg: #121110;
+    --line: #34302c;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+h1 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+}
+h2 {
+  font-size: 1.15rem;
+  margin-top: 2em;
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
+}
+h3 {
+  font-size: 1rem;
+  margin-top: 1.5em;
+}
+a {
+  color: var(--accent);
+}
+.meta,
+.back {
+  color: var(--sub);
+  font-size: 0.9rem;
+}
+li {
+  margin: 0.3em 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+}
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  width: 30%;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media (max-width: 560px) {
+  th,
+  td {
+    display: block;
+    width: auto;
+    white-space: normal;
+  }
+  th {
+    border-bottom: none;
+    padding-bottom: 2px;
+  }
+}
